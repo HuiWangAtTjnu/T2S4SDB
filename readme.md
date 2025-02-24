@@ -12,9 +12,11 @@ The file `ada.table.csv` contains geographic region descriptions for each databa
 The file `QA-ada-56.txt` stores questions and answers based on the ada database. <br>
 
 Below is an example: <br>
-`
+
 label:G S <br>
+
 questionCHI:请问太湖的面积是多少？<br>
+
 evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。<br>
 nameCHI:太湖以'太湖'为名称表示。<br>
 question:What is the area of Lake Tai?<br>
@@ -22,7 +24,7 @@ evidence:Lake Tai is composed of multiple sections of water with the same name. 
 name:Lake Tai is represented by the name '太湖'.<br>
 SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
 Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
-id: ada01<br>`
+id: ada01<br>
 
     The meaning of each field is as follows:
 
