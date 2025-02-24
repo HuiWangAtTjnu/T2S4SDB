@@ -6,23 +6,23 @@ The data and code were created for the review of the paper "GPT-based Text-to-SQ
 Datasets
 =
 
-The folder 'sdbdatasets' contains the datasets we created specifically for spatial databases, including 'dataset1' and 'dataset2'. We first need to extract the compressed files in the folder 'sdbdatasets'.
-The file ada.sqlite is an SQLite database file (We can use [spatialite-gui](https://www.gaia-gis.it/fossil/spatialite_gui/index), an open-source graphical user interface tool, to manage SQLite database files).
-The file ada.table.csv contains geographic region descriptions for each database table, supporting both Chinese and English.
-The file QA-ada-56.txt stores questions and answers based on the ada database.
-        
+The folder `sdbdatasets` contains the datasets we created specifically for spatial databases, including `dataset1` and `dataset2` (We need to extract the compressed files in the folder `sdbdatasets`). <br>
+The file `ada.sqlite` is an SQLite database file (We can use [spatialite-gui](https://www.gaia-gis.it/fossil/spatialite_gui/index), an open-source graphical user interface tool, to manage SQLite database files). <br>
+The file `ada.table.csv` contains geographic region descriptions for each database table, supporting both Chinese and English. <br>
+The file `QA-ada-56.txt` stores questions and answers based on the ada database. <br>
+
 Below is an example:  
-        label:G S
-        questionCHI:请问太湖的面积是多少？
-        evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。
-        nameCHI:太湖以'太湖'为名称表示。
-        question:What is the area of Lake Tai?
-        evidence:Lake Tai is composed of multiple sections of water with the same name. Only provide the area.
-        name:Lake Tai is represented by the name '太湖'.
-        SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-        Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-        id: ada01
-        
+`label:G S <br>
+questionCHI:请问太湖的面积是多少？<br>
+evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。<br>
+nameCHI:太湖以'太湖'为名称表示。<br>
+question:What is the area of Lake Tai?<br>
+evidence:Lake Tai is composed of multiple sections of water with the same name. Only provide the area.<br>
+name:Lake Tai is represented by the name '太湖'.<br>
+SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
+Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
+id: ada01`
+<br>
 The folder `sdbdatasets` contains the datasets used, including `dataset1` and `dataset2`.  
    You need to first extract the compressed files located in the folder **sdbdatasets**.
     **dataset1** includes four databases: **ada**, **edu**, **tourism**, and **traffic**.  
