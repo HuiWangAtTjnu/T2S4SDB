@@ -64,7 +64,7 @@ Environment Setup
 =
     
 
-   To set up the environment, you should download the `[Stanford CoreNLP](http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip)`, unzip it to the folder `./third_party/`, and rename `stanford-corenlp-full-2018-10-05` to `stanfordnlp`. Next, you need to launch the coreNLP server:
+   To set up the environment, you should download the [Stanford CoreNLP](http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip), unzip it to the folder `./third_party/`, and rename `stanford-corenlp-full-2018-10-05` to `stanfordnlp`. Next, you need to launch the coreNLP server:
 
 
 
@@ -102,16 +102,14 @@ This step includes copying databases from `sdbdatasets` to the corresponding fol
    
 Prompt Generation
 ------
-   python generate_question.py --data_type 1 --algo sspa --shot 5
-
-  The parameter 'algo' options are limited to 'sspa', 'sspa_tips', 'sspa_geo', 'sspa_sdbms', and 'dail_sql'.
+This step will generate corresponding prompts for each method (dail_sql, sspa, sspa_geo, sspa_sdbms, sspa_tips) across different datasets (dataset1, dataset2) and scenarios (shot-0, shot-1, shot-3, shot-5).
 
     
     python generate_question.py
 
 
 
-   
+   ![image](pic/dail_sql.png)
 8. Calling the LLM
    python ask_llm.py --data_type 1 --algo sspa --shot 5 --model gpt-4-turbo-2024-04-09
    
