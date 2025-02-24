@@ -48,20 +48,7 @@ In `dataset2`, there are also four databases: `ada`, `edu`, `tourism`, and `traf
 
 Below is an example from the file `QA-ada-56.txt`: <br>
 
-     label:G S
-     questionCHI:请问太湖的面积是多少？
-     evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。
-     nameCHI:太湖以'太湖'为名称表示。
-     question:What is the area of Lake Tai?
-     evidence:Lake Tai is composed of multiple sections of water with the same name. Only provide the area.
-     name:Lake Tai is represented by the name '太湖'.
-     SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-     Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-     id: ada01
- 
-
-
-
+    
 
     The meaning of each field is as follows:
 
