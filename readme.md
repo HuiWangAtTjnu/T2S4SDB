@@ -86,8 +86,12 @@ Environment Setup
 
 
    You can refer to the installation steps at https://github.com/BeachWang/DAIL-SQL.
-  
-6. Data Preprocess
+
+Run
+=
+
+1. Data Preprocess
+-
     This step includes copying databases from **sdbdatasets** to the corresponding folders (**experiments/dataset1_ada_edu**, or **experiments/dataset1_tourism_traffic**,  or **experiments/dataset2_ada_edu**, or **experiments/dataset2_tourism_traffic**) and applying required processing operations.
 
    python data_preprocess.py --data_type 1
