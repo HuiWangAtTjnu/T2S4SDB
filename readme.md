@@ -88,7 +88,7 @@ Environment Setup
    You can refer to the installation steps at https://github.com/BeachWang/DAIL-SQL.
 
 Run
-=
+======
 
 Data Preprocess
 ------
@@ -99,15 +99,12 @@ This step includes copying databases from `sdbdatasets` to the corresponding fol
 
 
 
-    install default-jre
-    install default-jdk
-    cd third_party/stanfordnlp
-    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+    python data_preprocess.py
 
 
    
-
-7. Prompt Generation
+Prompt Generation
+------
    python generate_question.py --data_type 1 --algo sspa --shot 5
 
   The parameter 'algo' options are limited to 'sspa', 'sspa_tips', 'sspa_geo', 'sspa_sdbms', and 'dail_sql'.
