@@ -90,10 +90,11 @@ Environment Setup
 Run
 =
 
-* Data Preprocess
+* Data Preprocess<br>
 This step includes copying databases from `sdbdatasets` to the corresponding folders (`experiments/dataset1_ada_edu`, `experiments/dataset1_tourism_traffic`,  `experiments/dataset2_ada_edu`, and `experiments/dataset2_tourism_traffic`) and applying required processing operations.
 
-   python data_preprocess.py
+
+    python data_preprocess.py
 
 
 7. Prompt Generation
