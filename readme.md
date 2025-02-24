@@ -13,7 +13,7 @@ The file `QA-ada-56.txt` stores questions and answers based on the ada database.
 
 Below is an example: <br>
 label:G S <br>
-questionCHI:请问太湖的面积是多少？`<br>
+questionCHI:请问太湖的面积是多少？<br>
 evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。<br>
 nameCHI:太湖以'太湖'为名称表示。<br>
 question:What is the area of Lake Tai?<br>
