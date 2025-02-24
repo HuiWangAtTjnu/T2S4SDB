@@ -1,7 +1,7 @@
 Overview
 =
 
-The data and code were created for the review of the paper "GPT-based Text-to-SQL for Spatial Databases" and the code is adapted from DAIL-SQL (https://github.com/BeachWang/DAIL-SQL).
+The data and code were created for the review of the paper "GPT-based Text-to-SQL for Spatial Databases" and the code is adapted from [DAIL-SQL](https://github.com/BeachWang/DAIL-SQL).
 
 Dataset
 =
