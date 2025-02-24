@@ -95,10 +95,7 @@ Data Preprocess
 This step includes copying databases from `sdbdatasets` to the corresponding folders (`experiments/dataset1_ada_edu`, `experiments/dataset1_tourism_traffic`,  `experiments/dataset2_ada_edu`, and `experiments/dataset2_tourism_traffic`) and applying required processing operations.
 
 
-    python data_preprocess.py
-
-
-
+    
     python data_preprocess.py
 
 
@@ -109,6 +106,12 @@ Prompt Generation
 
   The parameter 'algo' options are limited to 'sspa', 'sspa_tips', 'sspa_geo', 'sspa_sdbms', and 'dail_sql'.
 
+    
+    python generate_question.py
+
+
+
+   
 8. Calling the LLM
    python ask_llm.py --data_type 1 --algo sspa --shot 5 --model gpt-4-turbo-2024-04-09
    
