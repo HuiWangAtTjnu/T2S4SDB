@@ -12,6 +12,23 @@ The folder `sdbdatasets` contains the datasets we created specifically for spati
 * The file `QA-ada-56.txt` stores questions and answers based on the ada database. <br>
 
 Below is an example from the file `QA-ada-56.txt`: <br>
+The meaning of each field is as follows:
+
+     |Field       | Description  
+     |------------|-------
+     |label       | For the SQL queries related to the question, `G` denotes a general query, and `S` represents a spatial query.
+     |question    | The question in natural language. 
+     |evidence    | Supporting knowledge.
+     |name        | Real values of some phrases from the `question` field in the database. 
+     |questionCHI | The Chinese translation of the `question` field.
+     |evidenceCHI | The Chinese translation of the `evidence` field.
+     |nameCHI     | The Chinese translation of the `name` field.
+     |SQL         | The SQL query corresponding to the `question` field. Due to derived columns, there may be multiple SQL queries, separated by `%%%`. 
+     |Eval        | SQL queries corresponding to all results. When evaluating the predicted SQL queries with execution accuracy, results like `Area(Intersection(a.Shape, b.Shape) 1)` and `Area(Intersection(b.Shape, a.Shape) 1)` may differ. 
+     |id          | The unique ID for the question.  
+
+
+     
 `label:G S`<br>
 `questionCHI:请问太湖的面积是多少？`<br>
 `evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。`<br>
