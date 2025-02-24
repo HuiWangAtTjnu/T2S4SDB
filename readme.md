@@ -12,7 +12,7 @@ The folder `sdbdatasets` contains the datasets we created specifically for spati
 * The file `QA-ada-56.txt` stores questions and answers based on the ada database. <br>
 
 Below is an example from the file `QA-ada-56.txt`: <br>
-`label:G S` `<br>
+`label:G S`
 `questionCHI:请问太湖的面积是多少？ `<br>
 `evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。 `<br>
 `nameCHI:太湖以'太湖'为名称表示。 `<br>
