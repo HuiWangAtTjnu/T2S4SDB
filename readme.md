@@ -79,6 +79,14 @@ Environment Setup
    python -m pip install --upgrade pip
    pip install -r requirements.txt
    python nltk_downloader.py
+   
+
+    install default-jre
+    install default-jdk
+    cd third_party/stanfordnlp
+    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+
+
 
    You can refer to the installation steps at https://github.com/BeachWang/DAIL-SQL.
   
