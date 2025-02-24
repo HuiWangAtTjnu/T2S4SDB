@@ -12,6 +12,7 @@ The file `ada.table.csv` contains geographic region descriptions for each databa
 The file `QA-ada-56.txt` stores questions and answers based on the ada database. <br>
 
 Below is an example: <br>
+`
 label:G S <br>
 questionCHI:请问太湖的面积是多少？<br>
 evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。<br>
@@ -21,26 +22,8 @@ evidence:Lake Tai is composed of multiple sections of water with the same name. 
 name:Lake Tai is represented by the name '太湖'.<br>
 SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
 Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
-id: ada01<br>
-The folder `sdbdatasets` contains the datasets used, including `dataset1` and `dataset2`.  
-   You need to first extract the compressed files located in the folder **sdbdatasets**.
-    **dataset1** includes four databases: **ada**, **edu**, **tourism**, and **traffic**.  
-    For example, in the **ada** database:  
-        **ada.sqlite** is the database file.  
-        **ada.geo.csv** contains geographic region descriptions for each database table, supporting both Chinese and English.  
-        **QA-ada-56.txt** stores questions and answers based on the **ada** database. Below is an example:  
-        -------------------------------------------------------------------------------------------------------------------------------------
-        label:G S
-        questionCHI:请问太湖的面积是多少？
-        evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。
-        nameCHI:太湖以'太湖'为名称表示。
-        question:What is the area of Lake Tai?
-        evidence:Lake Tai is composed of multiple sections of water with the same name. Only provide the area.
-        name:Lake Tai is represented by the name '太湖'.
-        SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-        Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-        id: ada01
-        -------------------------------------------------------------------------------------------------------------------------------------
+id: ada01<br>`
+
     The meaning of each field is as follows:
 
      | Field                   | Description  
