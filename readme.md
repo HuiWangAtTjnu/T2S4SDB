@@ -11,18 +11,9 @@ The file `ada.sqlite` is an SQLite database file (We can use [spatialite-gui](ht
 The file `ada.table.csv` contains geographic region descriptions for each database table, supporting both Chinese and English. <br>
 The file `QA-ada-56.txt` stores questions and answers based on the ada database. <br>
 
-Below is an example: <br>```
-label:G S
-questionCHI:请问太湖的面积是多少？
-evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。
-nameCHI:太湖以'太湖'为名称表示。<br>
-question:What is the area of Lake Tai?<br>
-evidence:Lake Tai is composed of multiple sections of water with the same name. Only provide the area.<br>
-name:Lake Tai is represented by the name '太湖'.<br>
-SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
-Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'<br>
-id: ada01<br>
-```
+Below is an example: <br>
+![image](https://github.com/HuiWangAtTjnu/T2S4SDB/blob/main/pictures/sample.png)
+
     The meaning of each field is as follows:
 
      | Field                   | Description  
