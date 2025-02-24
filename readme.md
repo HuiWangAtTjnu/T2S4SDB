@@ -28,7 +28,7 @@ Below is an example from the file `QA-ada-56.txt`: <br>
 
 
 
-The meaning of each field is as follows:: .  
+The meaning of each field is as follows:  
 
 
      |Field       | Description  
@@ -67,6 +67,19 @@ Environment Setup
    To set up the environment, you should download the stanford-cornlp and unzip it to the folder ./third_party. Next, you need to launch the coreNLP server:
 
 
+
+     |Field       | Description  
+     |------------|-------
+     |label       | For the SQL queries related to the question, 'G' denotes a general query, and 'S' represents a spatial query.
+     |question    | The question in natural language. 
+     |evidence    | Supporting knowledge.
+     |name        | Real values of some phrases from the 'question' field in the database. 
+     |questionCHI | The Chinese translation of the 'question' field.
+     |evidenceCHI | The Chinese translation of the 'evidence' field.
+     |nameCHI     | The Chinese translation of the 'name' field.
+     |SQL         | The SQL query corresponding to the 'question' field. Due to derived columns, there may be multiple SQL queries, separated by '%%%'. 
+     |Eval        | SQL queries corresponding to all results. When evaluating the predicted SQL queries with execution accuracy, results like 'Area(Intersection(a.Shape, b.Shape) 1)' and 'Area(Intersection(b.Shape, a.Shape) 1)' may differ. 
+     |id          | The unique ID for the question.  
 
 
    
