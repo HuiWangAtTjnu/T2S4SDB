@@ -97,6 +97,15 @@ This step includes copying databases from `sdbdatasets` to the corresponding fol
     python data_preprocess.py
 
 
+
+    install default-jre
+    install default-jdk
+    cd third_party/stanfordnlp
+    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+
+
+   
+
 7. Prompt Generation
    python generate_question.py --data_type 1 --algo sspa --shot 5
 
