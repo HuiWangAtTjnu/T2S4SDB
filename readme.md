@@ -31,8 +31,6 @@ Below is an example from the file `QA-ada-56.txt`: <br>
 The meaning of each field is as follows:: .  
 
 
-    The meaning of each field is as follows:
-
      |Field       | Description  
      |------------|-------
      |label       | For the SQL queries related to the question, `G` denotes a general query, and `S` represents a spatial query.
