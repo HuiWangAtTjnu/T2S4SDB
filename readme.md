@@ -14,8 +14,8 @@ The folder `sdbdatasets` contains the datasets we created specifically for spati
 Below is an example from the file `QA-ada-56.txt`: <br>
 The meaning of each field is as follows:
 
-     |Field       | Description  
-     |------------|-------
+     label:G S
+     questionCHI:请问太湖的面积是多少？
      |label       | For the SQL queries related to the question, `G` denotes a general query, and `S` represents a spatial query.
      |question    | The question in natural language. 
      |evidence    | Supporting knowledge.
