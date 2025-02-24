@@ -109,7 +109,7 @@ This step will generate corresponding prompts for each method (dail_sql, sspa, s
 
 
 
-   ![image](pic/dail_sql.png)
+   dail![image](https://github.com/HuiWangAtTjnu/T2S4SDB/pic/dail_sql.png)
 8. Calling the LLM
    python ask_llm.py --data_type 1 --algo sspa --shot 5 --model gpt-4-turbo-2024-04-09
    
