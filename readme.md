@@ -62,13 +62,14 @@ The `experiments` folder contains the `results` folder and four types of dataset
 
 Environment Setup
 =
-    To set up the environment, you should download the Stanford CoreNLP (http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip), unzip it to the folder **third_party**, and rename 'stanford-corenlp-full-2018-10-05' to 'stanfordnlp'. Next, you need to launch the coreNLP server:
     
-    install default-jre
-    install default-jdk
-    cd third_party/stanfordnlp
-    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 
+   To set up the environment, you should download the stanford-cornlp and unzip it to the folder ./third_party. Next, you need to launch the coreNLP server:
+
+
+
+
+   
    In addition,
    python -m pip install --upgrade pip
    pip install -r requirements.txt
