@@ -44,11 +44,8 @@ Below is an example from the file `QA-ada-56.txt`: <br>
      |id          | The unique ID for the question.  
 
 
-In `dataset2`, there are also four databases: `ada`, `edu`, `tourism`, and `traffic`.  
+Below is an example from the file `QA-ada-56.txt`: .  
 
-Below is an example from the file `QA-ada-56.txt`: <br>
-
-    
 
     The meaning of each field is as follows:
 
