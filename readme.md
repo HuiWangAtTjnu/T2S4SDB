@@ -76,15 +76,12 @@ Environment Setup
 
    
    In addition,
-   python -m pip install --upgrade pip
-   pip install -r requirements.txt
-   python nltk_downloader.py
+   
    
 
-    install default-jre
-    install default-jdk
-    cd third_party/stanfordnlp
-    java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+    python nltk_downloader.py
 
 
 
