@@ -109,9 +109,9 @@ This step will generate corresponding prompts for each method (dail_sql, sspa, s
 
 
 
-   dail![image](https://github.com/HuiWangAtTjnu/T2S4SDB/pic/dail_sql.png)
+   dail![image](https://github.com/HuiWangAtTjnu/T2S4SDB/blob/main/pic/dail_sql.png)
 8. Calling the LLM
-![image](https://github.com/HuiWangAtTjnu/T2S4SDB/pic/dail_sql.png))
+
    python ask_llm.py --data_type 1 --algo sspa --shot 5 --model gpt-4-turbo-2024-04-09
    
   The parameter 'model' refers to the GPT model used in our experiments, specifically 'gpt-4-turbo-2024-04-09'. Additionally, you need to modify the 'api_key' and 'base_url' parameters in **llm/chatgpt.py**.
