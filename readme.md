@@ -3,8 +3,10 @@ Overview
 
 The data and code were created for the review of the paper "GPT-based Text-to-SQL for Spatial Databases" and the code is adapted from DAIL-SQL (https://github.com/BeachWang/DAIL-SQL).
 
+Dataset
+=
 
-1. The folder **sdbdatasets** contains the datasets used, including **dataset1** and **dataset2**.  
+The folder `sdbdatasets` contains the datasets used, including **dataset1** and **dataset2**.  
    You need to first extract the compressed files located in the folder **sdbdatasets**.
     **dataset1** includes four databases: **ada**, **edu**, **tourism**, and **traffic**.  
     For example, in the **ada** database:  
