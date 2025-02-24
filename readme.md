@@ -12,22 +12,22 @@ The folder `sdbdatasets` contains the datasets we created specifically for spati
 * The file `QA-ada-56.txt` stores questions and answers based on the ada database. <br>
 
 Below is an example: <br>
-label:G S
-questionCHI:请问太湖的面积是多少？
-evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。
-nameCHI:太湖以'太湖'为名称表示。
-question:What is the area of Lake Tai?
-evidence:Lake Tai is composed of multiple sections of water with the same name. Only provide the area.
-name:Lake Tai is represented by the name '太湖'.
-SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖'
-id: ada01
+label:G S <br>
+questionCHI:请问太湖的面积是多少？ <br>
+evidenceCHI:太湖是由多个名称相同的湖泊区域组成。只需给出面积。 <br>
+nameCHI:太湖以'太湖'为名称表示。 <br>
+question:What is the area of Lake Tai? <br>
+evidence:Lake Tai is composed of multiple sections of water with the same name. Only provide the area. <br>
+name:Lake Tai is represented by the name '太湖'. <br>
+SQL: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖' <br>
+Eval: Select Sum(Area)  from lakes where name = '太湖'  %%% Select Sum(Area(Shape, 1))   from lakes where name = '太湖' <br>
+id: ada01 <br>
 
 
     The meaning of each field is as follows:
 
      | Field                   | Description  
-     |-------------------|-------------------------------------------------------------------------------------------------
+     |-------------------|-------
      | **label**             | For the SQL queries related to the question, "G" denotes a general query, and "S" represents a spatial query.
      | **question**       | The question in natural language. 
      | **evidence**       | Supporting knowledge.
@@ -39,7 +39,9 @@ id: ada01
      | **Eval**               | SQL queries corresponding to all results. When evaluating the predicted SQL queries with execution accuracy, results like `Area(Intersection(a.Shape, b.Shape) 1)` and `Area(Intersection(b.Shape, a.Shape) 1)` may differ. 
      | **id**                  | The unique ID for the question.  
 
-    In **dataset2**, there are also four databases: **ada**, **edu**, **tourism**, and **traffic**.  
+
+
+In ·dataset2·, there are also four databases: **ada**, **edu**, **tourism**, and **traffic**.  
         The **tourism** database in **dataset2** is the same as the **tourism** database in **dataset1**.  
         The **ada**, **edu**, and **traffic** databases in ** dataset2**  are derived from the corresponding databases in ** dataset1**  by removing the derived columns.  
         The questions in both ** dataset1**  and ** dataset2**  are identical for each database.
