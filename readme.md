@@ -46,20 +46,18 @@ In `dataset2`, there are also four databases: `ada`, `edu`, `tourism`, and `traf
 * The `ada`, `edu`, and **traffic** databases in `dataset2`  are derived from the corresponding databases in `dataset1`  by removing the derived columns.  
 * The questions in both `dataset1`  and `dataset2`  are identical for each database.
 
-2. The folder **experiments** contains four types of datasets, which are derived from combinations of data in sdbdatasets.
-   You also need to extract the compressed files located in the folder **experiments**.
-    The folder **dataset1_ada_edu** indicates that the training set is built using data from the **tourism** and **traffic** databases in **dataset1**, and predictions are made for questions related to the **ada** and **edu** databases.
-    The folder **dataset1_tourism_traffic** indicates that the training set is built using data from the **ada** and **edu** databases in **dataset1**, and predictions are made for questions related to the **tourism** and **traffic** databases.
-    The folder **dataset2_ada_edu** indicates that the training set is built using data from the **tourism** and **traffic** databases in **dataset2**, and predictions are made for questions related to the **ada and **edu** databases.
-    The folder **dataset2_tourism_traffic** indicates that the training set is built using data from the **ada** and **edu** databases in **dataset2**, and predictions are made for questions related to the **tourism** and **traffic** databases.
+Experiments
+=
 
-3. The **SpatiaLite** folder contains the software library.
-   You need to extract the compressed files located in the folder **SpatiaLite**.
-   Users can interact with SQLite database files using **spatialite-gui**, an open-source graphical user interface (GUI) tool that supports SpatiaLite.
-    
-    You maybe need add the directory containing the **SpatiaLite** folder to the system variables, as we will be using the library 'mod_spatialite.dll'.
+The `experiments` folder contains the `results` folder and four types of datasets, which are derived from various combinations of data in the `sdbdatasets` folder (We  also need to extract the compressed files in the folder `experiments`).
+* The folder `dataset1_ada_edu` indicates that the training set is built using data from the `tourism` and `traffic` databases in `dataset1`, and predictions are made for questions related to the `ada` and `edu` databases.
+* The folder `dataset1_tourism_traffic` indicates that the training set is built using data from the `ada` and `edu` databases in `dataset1`, and predictions are made for questions related to the `tourism` and `traffic` databases.
+* The folder `dataset2_ada_edu` indicates that the training set is built using data from the `tourism` and `traffic` databases in `dataset2`, and predictions are made for questions related to the ada and edu databases.
+* The folder `dataset2_tourism_traffic` indicates that the training set is built using data from the `ada` and `edu` databases in `dataset2`, and predictions are made for questions related to the `tourism` and `traffic` databases.
 
-4. Environment Setup
+
+Environment Setup
+=
     To set up the environment, you should download the Stanford CoreNLP (http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip), unzip it to the folder **third_party**, and rename 'stanford-corenlp-full-2018-10-05' to 'stanfordnlp'. Next, you need to launch the coreNLP server:
     
     install default-jre
