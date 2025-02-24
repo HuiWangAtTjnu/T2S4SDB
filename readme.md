@@ -1,8 +1,7 @@
 Overview
 =
 
-The code and data provided support the experiments conducted for the paper titled "GPT-based Text-to-SQL for Spatial Databases".
-The code is adapted from DAIL-SQL (https://github.com/BeachWang/DAIL-SQL) and is intended solely for research purposes.
+The data and code were created for the review of the paper "GPT-based Text-to-SQL for Spatial Databases" and the code is adapted from DAIL-SQL (https://github.com/BeachWang/DAIL-SQL).
 
 
 1. The folder **sdbdatasets** contains the datasets used, including **dataset1** and **dataset2**.  
