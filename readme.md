@@ -90,16 +90,11 @@ Environment Setup
 Run
 =
 
-1. Data Preprocess
--
-    This step includes copying databases from **sdbdatasets** to the corresponding folders (**experiments/dataset1_ada_edu**, or **experiments/dataset1_tourism_traffic**,  or **experiments/dataset2_ada_edu**, or **experiments/dataset2_tourism_traffic**) and applying required processing operations.
+* Data Preprocess
+This step includes copying databases from `sdbdatasets` to the corresponding folders (`experiments/dataset1_ada_edu`, `experiments/dataset1_tourism_traffic`,  `experiments/dataset2_ada_edu`, and `experiments/dataset2_tourism_traffic`) and applying required processing operations.
 
-   python data_preprocess.py --data_type 1
+   python data_preprocess.py
 
-   # data_type = 1: dataset 1      train set: tourism&traffic              dev set:ada&edu
-   # data_type = 2: dataset 1      train set: ada&edu                      dev set:tourism&traffic
-   # data_type = 3: dataset 2      train set: tourism&traffic              dev set:ada&edu
-   # data_type = 4: dataset 2      train set: ada&edu                      dev set:tourism&traffic
 
 7. Prompt Generation
    python generate_question.py --data_type 1 --algo sspa --shot 5
