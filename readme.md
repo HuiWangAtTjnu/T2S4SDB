@@ -33,7 +33,7 @@ The meaning of each field is as follows:: .
 
      |Field       | Description  
      |------------|-------
-     |label       | For the SQL queries related to the question, `G` denotes a general query, and `S` represents a spatial query.
+     |label       | For the SQL queries related to the question, **G** denotes a general query, and `S` represents a spatial query.
      |question    | The question in natural language. 
      |evidence    | Supporting knowledge.
      |name        | Real values of some phrases from the `question` field in the database. 
